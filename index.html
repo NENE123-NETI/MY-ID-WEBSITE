@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ID Card Creation / Editing</h1>
+        <p>Please fill the form below to apply for a new ID card, or edit your existing ID.</p>
+
+        <form>
+            <label for="idtype">ID Type</label>
+            <input type="text" id="idtype" placeholder="Student ID, Staff ID, Event ID" required>
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter full name" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter age" required>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" placeholder="Enter country" required>
+
+            <label for="payment">Payment Method</label>
+            <select id="payment">
+                <option>Tap Tap Send</option>
+            </select>
+
+            <label for="previous-id">Upload Previous ID (if editing)</label>
+            <input type="file" id="previous-id" accept="image/*,application/pdf">
+
+            <label for="issue">Describe the Issue / Request</label>
+            <textarea id="issue" placeholder="e.g. I want to recreate my ID, or update my photo" rows="4"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <!-- CONTACT SECTION -->
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>WhatsApp: <strong>+1 458 836 8309</strong></p>
+            <p>Click the WhatsApp button below to chat with us instantly.</p>
+        </div>
+    </div>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/14588368309?text=Hello%2C%20I%20want%20to%20apply%20for%20an%20ID%20card"
+        class="whatsapp-float" target="_blank">
+        WhatsApp
+    </a>
+
+</body>
+
+</html>
